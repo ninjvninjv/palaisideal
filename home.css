@@ -17,6 +17,7 @@ body {
     box-sizing: border-box;
     width: 25vw;
     height: 50vh;
+    z-index:1;
 }
 
 #one {
@@ -68,23 +69,23 @@ img {
     width: 30vw;
     top: 27vh;
     left: 30vw;
-    cursor: pointer;
 }
 
 .eye {
-    position: absolute;
+    position: fixed;
     display: inline-block;
     border-radius: 50%;
     height: 13vw;
     width: 13vw;
     background-color: none;
-    cursor: pointer;
+    
     top: 35vh;
     left: 40vw;
-    z-index: 11;
+    z-index: 20;
+    cursor: pointer;
 }
 .eye:after { /*pupil*/
-    position: absolute;
+    position: fixed;
     bottom: 6vw;
     right: 3vw;
     width: 10vw;
@@ -93,4 +94,36 @@ img {
     content: " ";
     background-image: url(Oeil_site2.svg);
     background-repeat: no-repeat;
+}
+
+.tickercontainer { /* the outer div with the black border */
+    background: #fff; 
+    width: 100vw; 
+    height: 27px; 
+    margin: 0; 
+    padding: 0;
+    overflow: hidden; 
+}
+
+
+a {
+    position: fixed;
+    z-index: 100;
+    cursor: default;
+}
+
+ul#ticker01 { /* that's your list */
+    position: relative;
+    font: 12pt Helvetica;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+ul#ticker01 li {
+    float: left; /* important: display inline gives incorrect results when you check for elem's width */
+    margin: 0;
+    margin-left: 5px;
+    padding: 0;
+    background: #fff;
 }
