@@ -18,173 +18,168 @@
 </head>
     
 <body onkeypress="playOnKey(event)">
-    
- 
-    <!--<div class='tickercontainer'>
-    
-        <ul id="ticker01">
-            <li>The eye petrifies imagination. </li>
-            <li>The eye petrifies sensation. </li>
-            <li>The eye petrifies curiosity. </li>
-            <li>The eye petrifies perception. </li>
-            <li>The eye petrifies messages. </li>
-            <li>The eye petrifies moments. </li>
-            <li>The eye petrifies day-dreams. </li>
-            <li>The eye petrifies memories. </li>
-            <li>The eye petrifies vision. </li>
-            <li>The eye petrifies mystery. </li>
-            <li>The eye petrifies multiplicity. </li>
-            <li>The eye petrifies multi-dimensionality. </li>
-            <li>The eye petrifies facets. </li>
-            <li>The eye petrifies essence. </li>
-            <li>The eye petrifies definition. </li>
-            <li>The eye petrifies potential. </li>
-            <li>The eye petrifies change. </li>
-            <li>The eye petrifies evolution. </li>
-            <li>The eye petrifies comprehension. </li>
-            <li>The eye petrifies thrill. </li>
-            <li>The eye petrifies prejudice. </li>
-            <li>The eye petrifies comprehension. </li>
-            <li>The eye petrifies preconception. </li>
-            <li>The eye petrifies bias. </li>
-        </ul>
-    
-    </div>-->
-    
-        
      
-      <a id='email' href="mailto:?body=07.11%0Ahttps://ninjvninjv.github.io/palaisideal/" ></a>
-    
-     
+    <a id='email' href="mailto:?body=07.11%0Ahttps://ninjvninjv.github.io/palaisideal/" ></a>
+
+    <div class="stone" id='one' onmouseover='playOnHover("a")' onmouseout='pauseOnHover("a")'>
          
-    
-        <div class="stone" id='one' onmouseover='playOnHover("a")' onmouseout='pauseOnHover("a")'>
-         
-                <audio id='a' src='stone.m4a'></audio>
-                <audio id='A' src='science.mp3'></audio>
+                <audio id='a'>
+                  <source src="stone.ogg" type="audio/ogg" />
+                  <source src="stone.mp3" type="audio/mp3" />
+                </audio>
           
     </div>
     
     <div class="stone" id='two' onmouseover='playOnHover("b")' onmouseout='pauseOnHover("b")'>
          
-                <audio id='b' src='b.m4a'></audio>
-                <audio id='B' src='science.mp3'></audio>
+                <audio id='b'>
+                  <source src="b.ogg" type="audio/ogg" />
+                  <source src='b.mp3' type="audio/mp3" />
+                </audio>
           
     </div>
+    
     <div class="stone" id='three' onmouseover='playOnHover("c")' onmouseout='pauseOnHover("c")'>
          
-                <audio id='c' src='c.m4a'></audio>
-                <audio id='A' src='science.mp3'></audio>
+                <audio id='c'>
+                  <source src="c.ogg" type="audio/ogg" />
+                  <source src='c.mp3' type="audio/mp3" />
+                </audio>
           
     </div>
     
     <div class="stone" id='four' onmouseover='playOnHover("d")' onmouseout='pauseOnHover("d")'>
          
-                <audio id='d' src='d.m4a'></audio>
-                <audio id='A' src='science.mp3'></audio>
+                <audio id='d'>
+                  <source src="d.ogg" type="audio/ogg" />
+                  <source src='d.mp3' type="audio/mp3" />
+                </audio>
           
     </div>
     
     <div class="stone" id='five' onmouseover='playOnHover("e")' onmouseout='pauseOnHover("e")'>
          
-                <audio id='e' src='e.m4a'></audio>
-                <audio id='A' src='science.mp3'></audio>
+                <audio id='e'>
+                  <source src="e.ogg" type="audio/ogg" />
+                  <source src='e.mp3' type="audio/mp3" />
+                </audio>
           
     </div>
     
     <div class="stone" id='six' onmouseover='playOnHover("f")' onmouseout='pauseOnHover("f")'>
          
-                <audio id='f' src='f.m4a'></audio>
-                <audio id='A' src='science.mp3'></audio>
+                <audio id='f'>
+                  <source src="f.ogg" type="audio/ogg" />
+                  <source src='f.mp3' type="audio/mp3" />
+                </audio>
           
     </div>
     
     <div class="stone" id='seven' onmouseover='playOnHover("g")' onmouseout='pauseOnHover("g")'>
          
-                <audio id='g' src='g.m4a'></audio>
-                <audio id='A' src='science.mp3'></audio>
+                <audio id='g'>
+                  <source src="g.ogg" type="audio/ogg" />
+                  <source src='g.mp3' type="audio/mp3" />
+                </audio>
           
     </div>
     
     <div class="stone" id='eight' onmouseover='playOnHover("h")' onmouseout='pauseOnHover("h")'>
          
-                <audio id='h' src='stone.m4a'></audio>
-                <audio id='A' src='science.mp3'></audio>
+                <audio id='h'>
+                  <source src="h.ogg" type="audio/ogg" />
+                  <source src='h.mp3' type="audio/mp3" />
+                </audio>
           
-         </div>
+    </div>
     
-     <div id='manifeste' class='container'>
-    <div class='eye'></div>
-  </div>
+    <div id='manifeste' class='container'>
+        <div class='eye'></div>
+    </div>
     
     <img src='Oeil_site1.svg'>
-    <audio id='voice' src='Manifeste.m4a'></audio>
+    <audio id='voice'>
+        <source src='Manifeste.ogg' type="audio/ogg" />
+        <source src='Manifeste.mp3' type="audio/mp3" />
+    </audio>
 
     
-      <script>
-    
-    function playOnKey(event) {
-        var x = event.key;
-        var audio = document.getElementById(x);  
-            
+    <script>
+          
+        $(document).ready(function() {
+                var today = new Date();
+                var dd = today.getDate();
+                var mm = today.getMonth()+1; //January is 0!
+                var yyyy = today.getFullYear();
+
+                if(dd<10) {
+                    dd = '0'+dd
+                } 
+
+                if(mm<10) {
+                    mm = '0'+mm
+                } 
+
+                today = dd + '.' + mm + '.' + yyyy;
+                var link = 'mailto:?body='+ today + '%0Ahttps://ninjvninjv.github.io/palaisideal/'
+                $('#email').attr('href', link);      
+
+        }); 
+
+        function playOnHover(x) {
+            var audio = document.getElementById(x);
+                    audio.play();
+        };    
+
+        function pauseOnHover(x) {
+            var audio = document.getElementById(x);
+                    audio.pause();
+        };    
+
+
+        $("body").mousemove(function(event) {
+            var eye = $(".eye");
+            var x = (eye.offset().left) + (eye.width() / 2);
+            var y = (eye.offset().top) + (eye.height() / 2);
+            var rad = Math.atan2(event.pageX - x, event.pageY - y);
+            var rot = (rad * (180 / Math.PI) * -1) + 180;
+            eye.css({
+                '-webkit-transform': 'rotate(' + rot + 'deg)',
+                '-moz-transform': 'rotate(' + rot + 'deg)',
+                '-ms-transform': 'rotate(' + rot + 'deg)',
+                'transform': 'rotate(' + rot + 'deg)'
+              });
+        });
+
+        $(".container").mousemove(function(event) {
+            var eye = $(".eye");
+            eye.css({
+                '-webkit-transform': '',
+                '-moz-transform': '',
+                '-ms-transform': '',
+                'transform': '',
+              });
+        });      
+
+
+        $('#manifeste').click(function() {
+            var audio = document.getElementById('voice');
             if (audio.paused == true) {
-                audio.play();
-            }
-            else {
-                audio.pause();
-            }
-            
-        
-        ;
-    }
-        
-    function playOnHover(x) {
-        var audio = document.getElementById(x);
-                audio.play();
-    }    
-        
-    function pauseOnHover(x) {
-        var audio = document.getElementById(x);
-                audio.pause();
-    }    
-        
-   
-    $("body").mousemove(function(event) {
-        var eye = $(".eye");
-        var x = (eye.offset().left) + (eye.width() / 2);
-        var y = (eye.offset().top) + (eye.height() / 2);
-        var rad = Math.atan2(event.pageX - x, event.pageY - y);
-        var rot = (rad * (180 / Math.PI) * -1) + 180;
-        eye.css({
-            '-webkit-transform': 'rotate(' + rot + 'deg)',
-            '-moz-transform': 'rotate(' + rot + 'deg)',
-            '-ms-transform': 'rotate(' + rot + 'deg)',
-            'transform': 'rotate(' + rot + 'deg)'
-          });
-    });
-          
-    $(".container").mousemove(function(event) {
-        var eye = $(".eye");
-        eye.css({
-            '-webkit-transform': '',
-            '-moz-transform': '',
-            '-ms-transform': '',
-            'transform': '',
-          });
-    });      
-          
-    
-    $('#manifeste').click(function() {
-        var audio = document.getElementById('voice');
-                audio.play();
-        
-    })     
-          
-    setTimeout(function(){$link = $('a:first');
-location.href = $link.attr('href');},30000);
-   
-    
-</script>  
+                    audio.play();
+                }
+                else {
+                    audio.pause();
+                }
+
+        });     
+
+        setTimeout(function(){
+            $link = $('a:first');
+            location.href = $link.attr('href');
+        },90000);
+
+
+    </script>  
     
 </body>    
     
