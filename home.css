@@ -85,7 +85,7 @@ img {
     cursor: pointer;
 }
 .eye:after { /*pupil*/
-    position: fixed;
+    position: absolute;
     bottom: 6vw;
     right: 3vw;
     width: 10vw;
